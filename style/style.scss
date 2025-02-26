@@ -15,3 +15,23 @@ header {
     }
   }
 }
+
+main {
+  section.autobiography {
+    display: flex;
+    flex-wrap: wrap;
+    div.intro {
+      flex: 1 1 200px;
+      .parent {
+        display: flex;
+        justify-content: center; /* 水平居中 */
+        align-items: center; /* 垂直居中 */
+        height: 100vh; /* 让父容器占满整个视口高度 */
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

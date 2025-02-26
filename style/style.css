@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -11,4 +12,21 @@ ul {
 header nav ul {
   display: flex;
   justify-content: space-evenly;
+}
+
+main section.autobiography {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.autobiography div.intro {
+  flex: 1 1 200px;
+}
+main section.autobiography div.intro .parent {
+  display: flex;
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  height: 100vh; /* 让父容器占满整个视口高度 */
+}
+main section.autobiography div.intro img {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
