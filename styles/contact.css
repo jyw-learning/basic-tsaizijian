@@ -1,0 +1,120 @@
+/* Variables */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  /* Contact Info Section */
+  /* Contact Form Section */
+}
+body header {
+  background-color: #6895c2;
+  color: #fff;
+  text-align: center;
+}
+body header nav {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+body header nav ul {
+  display: flex;
+}
+body header nav ul li {
+  list-style-type: none;
+  padding: 10px;
+  margin: 10px;
+}
+body header nav ul li a {
+  text-decoration: none;
+  color: black;
+  transition: all 0.3s ease;
+}
+body header nav ul li a:hover {
+  color: rgb(54, 212, 138);
+}
+body header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+body header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+body .contact-info {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+body .contact-info p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+body .contact-info a {
+  color: #3498db;
+  font-weight: bold;
+}
+body .contact-form {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+body .contact-form h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+body .contact-form label {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  display: block;
+}
+body .contact-form input,
+body .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+body .contact-form button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+body .contact-form button:hover {
+  background-color: #217dbb;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  .contact-info,
+  .contact-form {
+    margin: 10px;
+  }
+}/*# sourceMappingURL=contact.css.map */

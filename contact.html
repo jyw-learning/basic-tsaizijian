@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>聯絡我</title>
+    <link rel="stylesheet" href="styles/contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">關於蔡子建</a></li>
+          <li><a target="_blank" href="#">作品集</a></li>
+          <li><a href="#">聯絡我</a></li>
+        </ul>
+      </nav>
+      <h1>聯絡我</h1>
+      <p>如果有任何問題或合作機會，請透過以下方式聯絡我。</p>
+    </header>
+
+    <section class="contact-info">
+      <p>
+        Email:
+        <a href="mailto:your.email@example.com">your.email@example.com</a>
+      </p>
+      <p>
+        GitHub:
+        <a href="https://github.com/yourprofile" target="_blank"
+          >github.com/yourprofile</a
+        >
+      </p>
+      <p>
+        LinkedIn:
+        <a href="https://www.linkedin.com/in/yourprofile" target="_blank"
+          >linkedin.com/in/yourprofile</a
+        >
+      </p>
+    </section>
+
+    <section class="contact-form">
+      <h2>發送訊息</h2>
+      <form action="#" method="post">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email：</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">訊息：</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit">送出</button>
+      </form>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
