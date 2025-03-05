@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+body {
+  overflow-x: hidden;
+  nav {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    ul {
+      display: flex;
+
+      li {
+        list-style-type: none;
+        padding: 10px;
+        margin: 10px;
+        a {
+          text-decoration: none;
+          color: black;
+          transition: all 0.3s ease;
+          &:hover {
+            color: rgb(54, 212, 138);
+          }
+        }
+      }
+    }
+  }
+
+  section.main_area {
+    min-height: 70vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    div.info {
+      //   border: solid 2px black;
+      flex-basis: 450px;
+      padding: 1rem;
+      h1 {
+        font-size: 3.5rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+      a {
+        color: white;
+        background-color: rgb(54, 212, 138);
+        padding: 0.25rem 0.5rem;
+        font-size: 1.5rem;
+        border-radius: 20px;
+        display: inline-block;
+        margin-top: 2rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+    div.img_area {
+      flex-basis: 450px;
+      //   border: solid 2px red;
+    }
+  }
+
+  section.about_me {
+    background-color: rgb(231, 255, 233);
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+
+    section.description {
+      width: 50%;
+      text-align: center;
+      h2 {
+        font-size: 2rem;
+      }
+      program_bar_area {
+        p {
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+
+  section.resume {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+
+    section.table {
+      //   border: solid 2px blue;
+      flex: 5 0 500px;
+      padding: 2rem;
+      table {
+        --bs-table-bg: none;
+        border-collapse: collapse;
+        tr {
+          border-bottom: 2px solid gray;
+          transition: all 0.3s ease;
+          &:hover {
+            background-color: rgb(184, 255, 222);
+          }
+        }
+      }
+    }
+
+    section.picture {
+      //   border: solid 2px red;
+      flex: 1 1 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      img {
+        width: 80%;
+      }
+
+      div.greenReact {
+        position: absolute;
+        width: 30vw;
+        height: 90vh;
+        border: 10px solid rgb(195, 255, 200);
+        top: 30px;
+        left: 80px;
+        z-index: -1;
+      }
+      div.greenReact2 {
+        position: absolute;
+        width: 50vw;
+        height: 40vh;
+        border: 10px solid rgb(195, 255, 200);
+        top: 300px;
+        left: -300px;
+        z-index: -1;
+      }
+      div.greenReact3 {
+        position: absolute;
+        width: 50vw;
+        height: 40vh;
+        border: 10px solid rgb(195, 255, 200);
+        top: 0px;
+        left: -100px;
+        z-index: -1;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  body {
+    main {
+      section.about_me {
+        section.description {
+          width: 80%;
+        }
+      }
+      section.resume {
+        overflow-x: auto;
+        section.picture {
+          div.greenReact,
+          div.greenReact2,
+          div.greenReact3 {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    nav {
+      position: static;
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+}
