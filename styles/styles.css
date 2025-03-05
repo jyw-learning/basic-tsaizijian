@@ -20,7 +20,7 @@ body nav {
   background-color: white;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 100000;
 }
 body nav ul {
   display: flex;
@@ -86,7 +86,7 @@ body section.about_me section.description {
 body section.about_me section.description h2 {
   font-size: 2rem;
 }
-body section.about_me section.description program_bar_area p {
+body section.about_me section.description div.program_bar_area p {
   margin-top: 1rem;
 }
 body section.resume {
